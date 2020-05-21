@@ -68,10 +68,14 @@ section .btn {
 
 section .green {
   background-color: #03b597d4;
+  -webkit-box-shadow: -2px 3px 3px 0px #00987f;
+          box-shadow: -2px 3px 3px 0px #00987f;
 }
 
 section .blue {
   background-color: #3d8bd5;
+  -webkit-box-shadow: -2px 3px 3px 0px #346694;
+          box-shadow: -2px 3px 3px 0px #346694;
   margin-top: 1em;
 }
 
@@ -173,6 +177,7 @@ footer .footer-wrapper ul li {
 
 footer .footer-wrapper ul li a {
   text-decoration: none;
+  color: #000;
 }
 
 footer .footer-wrapper .socialIcons {

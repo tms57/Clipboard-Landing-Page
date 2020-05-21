@@ -68,14 +68,17 @@ section {
     border-radius: 50px;
     color: #fff;
     font-size: 1.1rem;
+    // box-shadow: -6px -4px 58px -21px rgba(148, 148, 148, 1);
   }
 
   .green {
     background-color: $green;
+    box-shadow: -2px 3px 3px 0px #00987f;
   }
 
   .blue {
     background-color: $blue;
+    box-shadow: -2px 3px 3px 0px #346694;
     margin-top: 1em;
   }
 }
@@ -151,6 +154,7 @@ footer {
 
         a {
           text-decoration: none;
+          color: #000;
         }
       }
     }
