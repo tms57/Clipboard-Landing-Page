@@ -8,4 +8,5 @@ I used a breakpoint of 900px, going all the way to 1440px seemed like too much.
 
 I'm beginning to notice that I'm getting better at writing the HTML by looking at **_both_** the mobile and desktop specs at the beginning. This way it's easier to anticipate when wrappers will be needed for flexbox in the desktop view.
 
-![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)
+The challenge is at:
+https://www.frontendmentor.io/challenges/clipboard-landing-page-5cc9bccd6c4c91111378ecb9
