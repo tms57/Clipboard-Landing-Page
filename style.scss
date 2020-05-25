@@ -50,7 +50,7 @@ p {
 }
 
 section {
-  padding: 8rem 1em 0 1em;
+  padding: 5rem 2em 0 2em;
 
   h1,
   h3 {
@@ -61,14 +61,18 @@ section {
     width: 100%;
   }
 
+  .download-buttons {
+    text-align: center;
+  }
+
   .btn {
     width: 100%;
+    max-width: 30rem;
     border: none;
     padding: 1em 0;
     border-radius: 50px;
     color: #fff;
     font-size: 1.1rem;
-    // box-shadow: -6px -4px 58px -21px rgba(148, 148, 148, 1);
   }
 
   .green {
@@ -91,7 +95,6 @@ section {
   margin-top: 5rem;
 
   img {
-    // width: 100%;
     margin-bottom: 3rem;
   }
 
@@ -112,6 +115,7 @@ section {
 
     img {
       width: 2rem;
+      height: 2rem;
       margin-bottom: 2rem;
     }
   }
@@ -178,6 +182,141 @@ footer {
     }
     .attribution a {
       color: hsl(228, 45%, 44%);
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  section {
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+    h1 {
+      margin: 1.25rem auto;
+    }
+
+    p {
+      margin: 0 auto 3rem auto;
+    }
+  }
+
+  .download-buttons {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    button {
+      width: 50%;
+    }
+    .btn {
+      width: 30%;
+      min-width: 210px;
+      margin: 0 1rem;
+    }
+  }
+
+  .keep-track {
+    margin-top: 0;
+    width: 100%;
+
+    // this section has a different width, so h1 & p must be 60% of the above 100%
+    h1,
+    p {
+      width: 60%;
+    }
+
+    .content-wrapper {
+      display: flex;
+
+      .computerImage {
+        margin-left: -3rem;
+      }
+
+      .computerImage,
+      .article-wrapper {
+        // flex: 1;
+        width: 50%;
+      }
+    }
+  }
+
+  .supercharge {
+    width: 80%;
+    margin: 0 auto;
+
+    .features-wrapper {
+      display: flex;
+
+      .feature-item:first-child {
+        margin-top: 0;
+        padding-left: 0;
+      }
+
+      .feature-item:last-child {
+        margin-top: 0;
+        padding-right: 0;
+      }
+
+      .feature-item {
+        // width: 33.3333%;
+        flex: 1;
+        padding: 0 1em 0 1em;
+      }
+    }
+  }
+
+  .companies {
+    flex-direction: row;
+    width: 85%;
+    margin: 4em auto 4em auto;
+
+    .img-logo {
+      width: 20%;
+      padding: 0 1.5em 0 1.5em;
+    }
+  }
+
+  footer {
+    .footer-wrapper {
+      width: 80%;
+      margin: 0 auto;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .footer-icon,
+      .socialIcons {
+        width: 20%;
+        display: flex;
+        align-items: center;
+      }
+      .footer-icon {
+        justify-content: flex-start;
+      }
+      .socialIcons {
+        justify-content: flex-end;
+      }
+      .footer-links {
+        width: 60%;
+
+        ul {
+          flex-direction: row;
+          justify-content: left;
+          flex-wrap: wrap;
+
+          li {
+            width: 27%;
+            padding: 0 0 1em 0;
+          }
+        }
+      }
+      .socialIcons {
+        margin-top: 0;
+        i {
+          padding: 0 0.4em 0 0.4em;
+        }
+      }
     }
   }
 }
